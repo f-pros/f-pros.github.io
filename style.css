@@ -45,6 +45,8 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  /* Position relative so absolute-positioned hamburger can be aligned properly on mobile */
+  position: relative;
 }
 
 .logo-img {
@@ -392,7 +394,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  /* Reduce the default spacing between social icons to better fit all icons on a single row */
+  gap: 20px;
   margin-bottom: 20px;
   /* Always keep social icons ordered left‑to‑right even in RTL context */
   direction: ltr;
@@ -456,6 +459,8 @@ footer {
 footer p {
   font-size: 0.9rem;
   color: #fff;
+  /* Keep the copyright text flowing left‑to‑right regardless of page direction */
+  direction: ltr;
 }
 
 /* Responsive adjustments */
@@ -505,6 +510,11 @@ footer p {
 
   .hamburger {
     display: flex;
+    /* Place the hamburger at the far right of the navbar on small screens */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* Adjust body padding for taller header on mobile */
@@ -516,6 +526,11 @@ footer p {
     width: 50px;
     height: 50px;
   }
+
+  /* Reduce spacing between social icons on small screens to keep them in one row */
+  .contact-buttons {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -526,10 +541,15 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .social-icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   .hint {
     font-size: 0.8rem;
+  }
+
+  /* Further reduce gap between social icons on very small screens */
+  .contact-buttons {
+    gap: 10px;
   }
 }
