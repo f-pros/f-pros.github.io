@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مؤسسة محترفين التشطيب – FINISHINGS PROFESSIONALS</title>
+    <!-- Load Tajawal font and Font Awesome icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-HCpftQ2vNqrsItIO2WLa6ct/9Hx2O8h9BFv3O/HzcSGh2eq2oO89S7F3SXE71aTwtWg2YbzX8E1LrTXKVD/vZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with navigation and info bar -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button id="language-toggle" class="language-toggle">EN</button>
+        </div>
+        <div class="nav-center">
+          <a href="#home">
+            <img src="assets/logo.png" alt="الشعار" class="logo-img" />
+          </a>
+        </div>
+        <ul class="nav-links nav-right">
+          <li><a id="nav-home" href="#home">الرئيسية</a></li>
+          <li><a id="nav-services" href="#services">خدماتنا</a></li>
+          <li><a id="nav-about" href="#about">من نحن</a></li>
+          <li><a id="nav-why" href="#why">لماذا نحن؟</a></li>
+          <li><a id="nav-contact" href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <!-- Secondary information bar: center logo and location -->
+          <div class="header-info">
+        <div class="info-item location-info">
+          <img
+            src="assets/location-icon.png"
+            alt="الطايف"
+            class="info-image-icon"
+          />
+          <div class="info-text">
+            <span id="info-location-title">الموقع</span>
+            <span id="info-location-subtitle">الطايف</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+      <!-- Hero section -->
+      <section id="home" class="hero">
+        <div class="hero-overlay">
+          <h1 id="hero-title">
+            نحو أرضيات عصرية بجودة تركيب عالية وإهتمام بأدق التفاصيل
+          </h1>
+          <p id="hero-tagline">
+            مستوحاة من أحدث التصاميم لنجعل خيالك حقيقة
+          </p>
+          <a href="#services" id="cta-button" class="cta-button">خدماتنا</a>
+        </div>
+      </section>
+
+      <!-- Services section -->
+      <section id="services" class="services">
+        <h2 id="services-title">خدماتنا</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-border-all service-icon"></i>
+            <h3 id="service-title-1">تركيب البلاط</h3>
+            <p id="service-desc-1">
+              تركيب البلاط بجميع أنواعه ومقاساته، تجهيز السطح، تشطيبات دقيقة،
+              وضبط المناسيب والميول.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-person-chalkboard service-icon"></i>
+            <h3 id="service-title-2">الإشراف على أعمال التبليط</h3>
+            <p id="service-desc-2">
+              متابعة التنفيذ خطوة بخطوة، مراجعة المناسيب والميول، التأكد من
+              جودة المواد وطريقة التركيب، وإضافة لمسات إبداعية.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-tools service-icon"></i>
+            <h3 id="service-title-3">حل المشكلات والإصلاح</h3>
+            <p id="service-desc-3">
+              وضع حلول لمشاكل اختلاف المناسيب، معالجة الهبوط والتشققات وسوء
+              التنفيذ، إعادة التبليط وتحسين الميول والتصريف.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-ruler-combined service-icon"></i>
+            <h3 id="service-title-4">رفع المقاسات والتمتير</h3>
+            <p id="service-desc-4">
+              رفع مقاسات دقيقة، تمتير احترافي يمنع الهدر ويقلل التكلفة، وإعداد
+              مخطط واضح للعميل.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-lightbulb service-icon"></i>
+            <h3 id="service-title-5">الاستشارات الفنية</h3>
+            <p id="service-desc-5">
+              مساعدتك في اختيار نوع البلاط المناسب، اقتراح أنماط تركيب حديثة،
+              وتقديم حلول فنية لأي تحديات أو معوقات.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="about">
+        <h2 id="about-title">من نحن</h2>
+        <p id="about-intro">
+          نحن مؤسسة متخصصة في التشطيب و تنفيذ جميع أعمال البلاط: تركيب، إشراف
+          على أعمال التبليط و تمثيل المالك، تقديم الاستشارات الفنية، رفع
+          المقاسات و التمتير، ضبط المناسيب، وضع حلول للصعوبات والتحديات،
+          تنفيذ صبة الميزان و صبة النظافة.
+        </p>
+        <p id="about-values">
+          نؤمن أن الأرضية ليست مجرد بلاط، بل لمسة جمالية تعكس ذوقك وتضيف قيمة
+          لمشروعك.
+        </p>
+        <p id="about-trends">
+          مواكبة الأفكار والحداثة والترندات وما يظهر يومياً من تصاميم جديدة
+          للأرضيات في وسائل التواصل الإجتماعي؛ نحن نتابعها، ندرسها، وننفذها لك
+          بجودة أعلى من الصورة نفسها.
+        </p>
+        <p id="about-trends2">
+          فإذا أعجبك تصميم فنحن لا نعرف كلمة مستحيل! نحن نتبناه ونحوّله لك إلى
+          أرضية حقيقية متقنة، مع تحسينات فنية تجعلها أجمل وأطول عمراً.
+        </p>
+      </section>
+
+      <!-- Why Us section -->
+      <section id="why" class="why">
+        <h2 id="why-title">لماذا نحن؟</h2>
+        <ul class="why-list">
+          <li id="why-item-1">
+            نتقن عملنا ونواكب أحدث الأشكال والاتجاهات العالمية.
+          </li>
+          <li id="why-item-2">
+            نترجم الأفكار والصور إلى تنفيذ واقعي فائق الجودة.
+          </li>
+          <li id="why-item-3">
+            نحل المشكلات قبل أن تتحول إلى تكاليف إضافية.
+          </li>
+          <li id="why-item-4">
+            نلتزم بالوقت ونحترم ذوق العميل ونقدم عملاً يليق بثقته.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="contact">
+        <h2 id="contact-title">تواصل معنا</h2>
+        <p id="contact-description">لتحويل فكرتك إلى أرضية جميلة مستدامة:</p>
+        <div class="contact-buttons">
+          <!-- Three WhatsApp icons with distinct behaviors plus email and TikTok.  The order is fixed by setting direction to LTR in CSS. -->
+          <!-- First WhatsApp: open chat normally -->
+ 
+          <!-- Second WhatsApp: initiate a phone call to +966550510004 -->
+          <a href="tel:+966550510004" class="social-link">
+            <img src="assets/call.png" alt="واتساب" class="social-icon" />
+          </a>
+          <!-- Third WhatsApp: redirect to Instagram account ibem00 -->
+          <a href="https://www.instagram.com/ibem00" class="social-link" target="_blank">
+            <img src="assets/instagram.png" alt="واتساب" class="social-icon" />
+          </a>
+          <!-- Email icon: clicking copies the email to clipboard instead of opening email -->
+          <a href="#" id="email-icon" class="social-link">
+            <img src="assets/email.png" alt="البريد الإلكتروني" class="social-icon" />
+          </a>
+          <!-- TikTok icon -->
+          <a href="https://www.tiktok.com/@designer2q" class="social-link" target="_blank">
+            <img src="assets/tiktok.png" alt="تيك توك" class="social-icon" />
+          </a>
+         <a href="https://wa.me/0593851828" class="social-link" target="_blank">
+            <img src="assets/whatsapp.png" alt="واتساب" class="social-icon" />
+          </a>
+        </div>
+        <!-- Hint text with an id so it can be translated.  Its content will be replaced by the translation script. -->
+        <p id="hint" class="hint">اضغط على الأيقونة للانتقال مباشرة</p>
+        <!-- QR code image appears as the last element of the contact section -->
+        <div class="qr-code-container">
+          <img src="assets/qr-code.jpeg" alt="رمز الاستجابة السريعة" class="qr-code" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p class="copyright">
+          &copy; .2026 FINISHINGS PROFESSIONALS. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp icon at bottom right -->
+    <a href="https://wa.me/0593851828" class="floating-whatsapp" target="_blank">
+      <img src="assets/whatsapp.png" alt="واتساب" />
+    </a>
+
+    <!-- Language toggle and translations script -->
+    <script>
+      // Mobile navigation toggle: open/close the hamburger menu on small screens
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      // Toggle nav visibility when the hamburger is clicked
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+      });
+
+      const translations = {
+        ar: {
+          'nav-home': 'الرئيسية',
+          'nav-services': 'خدماتنا',
+          'nav-about': 'من نحن',
+          'nav-why': 'لماذا نحن؟',
+          'nav-contact': 'تواصل معنا',
+          'hero-title': 'نحو أرضيات عصرية بجودة تركيب عالية وإهتمام بأدق التفاصيل',
+          'hero-tagline': 'مستوحاة من أحدث التصاميم لنجعل خيالك حقيقة',
+          'cta-button': 'خدماتنا',
+          'services-title': 'خدماتنا',
+          'service-title-1': 'تركيب البلاط',
+          'service-desc-1': 'تركيب البلاط بجميع أنواعه ومقاساته، تجهيز السطح، تشطيبات دقيقة، وضبط المناسيب والميول.',
+          'service-title-2': 'الإشراف على أعمال التبليط',
+          'service-desc-2': 'متابعة التنفيذ خطوة بخطوة، مراجعة المناسيب والميول، التأكد من جودة المواد وطريقة التركيب، وإضافة لمسات إبداعية.',
+          'service-title-3': 'حل المشكلات والإصلاح',
+          'service-desc-3': 'وضع حلول لمشاكل اختلاف المناسيب، معالجة الهبوط والتشققات وسوء التنفيذ، إعادة التبليط وتحسين الميول والتصريف.',
+          'service-title-4': 'رفع المقاسات والتمتير',
+          'service-desc-4': 'رفع مقاسات دقيقة، تمتير احترافي يمنع الهدر ويقلل التكلفة، وإعداد مخطط واضح للعميل.',
+          'service-title-5': 'الاستشارات الفنية',
+          'service-desc-5': 'مساعدتك في اختيار نوع البلاط المناسب، اقتراح أنماط تركيب حديثة، وتقديم حلول فنية لأي تحديات أو معوقات.',
+          'about-title': 'من نحن',
+          'about-intro': 'نحن مؤسسة متخصصة في التشطيب و تنفيذ جميع أعمال البلاط: تركيب، إشراف على أعمال التبليط و تمثيل المالك، تقديم الاستشارات الفنية، رفع المقاسات و التمتير، ضبط المناسيب، وضع حلول للصعوبات والتحديات، تنفيذ صبة الميزان و صبة النظافة.',
+          'about-values': 'نؤمن أن الأرضية ليست مجرد بلاط، بل لمسة جمالية تعكس ذوقك وتضيف قيمة لمشروعك.',
+          'about-trends': 'مواكبة الأفكار والحداثة والترندات وما يظهر يومياً من تصاميم جديدة للأرضيات في وسائل التواصل الإجتماعي؛ نحن نتابعها، ندرسها، وننفذها لك بجودة أعلى من الصورة نفسها.',
+          'about-trends2': 'فإذا أعجبك تصميم فنحن لا نعرف كلمة مستحيل! نحن نتبناه ونحوّله لك إلى أرضية حقيقية متقنة، مع تحسينات فنية تجعلها أجمل وأطول عمراً.',
+          'why-title': 'لماذا نحن؟',
+          'why-item-1': 'نتقن عملنا ونواكب أحدث الأشكال والاتجاهات العالمية.',
+          'why-item-2': 'نترجم الأفكار والصور إلى تنفيذ واقعي فائق الجودة.',
+          'why-item-3': 'نحل المشكلات قبل أن تتحول إلى تكاليف إضافية.',
+          'why-item-4': 'نلتزم بالوقت ونحترم ذوق العميل ونقدم عملاً يليق بثقته.',
+          'contact-title': 'تواصل معنا',
+          'contact-description': 'لتحويل فكرتك إلى أرضية جميلة مستدامة:',
+          'hint': 'اضغط على الأيقونة للانتقال مباشرة',
+          'info-location-title': 'الموقع',
+          'info-location-subtitle': 'الطايف'
+        },
+        en: {
+          'nav-home': 'Home',
+          'nav-services': 'Our Services',
+          'nav-about': 'About Us',
+          'nav-why': 'Why Us?',
+          'nav-contact': 'Contact Us',
+          'hero-title': 'Towards modern floors with high installation quality and attention to detail',
+          'hero-tagline': 'Inspired by the latest designs to make your imagination a reality',
+          'cta-button': 'Our Services',
+          'services-title': 'Our Services',
+          'service-title-1': 'Tile Installation',
+          'service-desc-1': 'Install tiles of all types and sizes, prepare the surface, provide precise finishes, and adjust levels and slopes.',
+          'service-title-2': 'Supervising Tile Work',
+          'service-desc-2': 'Monitor execution step-by-step, review levels and slopes, ensure quality of materials and installation method, and add creative touches.',
+          'service-title-3': 'Problem Solving & Repairs',
+          'service-desc-3': 'Find solutions for level differences, treat sinking, cracks and poor installation, re-tile and improve slopes and drainage.',
+          'service-title-4': 'Measurements & Estimation',
+          'service-desc-4': 'Take accurate measurements, professional estimation to prevent waste and reduce cost, and provide a clear plan for the client.',
+          'service-title-5': 'Technical Consultations',
+          'service-desc-5': 'Assist you in choosing the right tile type, suggest modern installation patterns, and offer technical solutions to any challenges or obstacles.',
+          'about-title': 'Who We Are',
+          'about-intro': 'We are a finishing company specialized in carrying out all tiling works: installation, supervising tiling works and representing the owner, providing technical consultations, taking measurements and estimation, adjusting levels, providing solutions to difficulties and challenges, and implementing leveling and cleaning slabs.',
+          'about-values': 'We believe that a floor is not just tiles, but an aesthetic touch that reflects your taste and adds value to your project.',
+          'about-trends': 'We keep up with ideas, modernity and trends and the new floor designs that appear daily on social media; we follow them, study them, and execute them for you with higher quality than the image itself.',
+          'about-trends2': 'If you like a design then we don’t know the word impossible! We adopt it and turn it for you into a real perfect floor, with technical improvements that make it more beautiful and longer-lasting.',
+          'why-title': 'Why Us?',
+          'why-item-1': 'We master our work and keep up with the latest shapes and global trends.',
+          'why-item-2': 'We translate ideas and images into high-quality practical implementation.',
+          'why-item-3': 'We solve problems before they turn into additional costs.',
+          'why-item-4': 'We commit to time, respect the client’s taste and deliver work worthy of their trust.',
+          'contact-title': 'Contact Us',
+          'contact-description': 'To transform your idea into a beautiful sustainable floor:',
+          'hint': 'Click the icon to go directly',
+          'info-location-title': 'Location',
+          'info-location-subtitle': 'Taif'
+        }
+      };
+
+      let currentLang = 'ar';
+      const toggleButton = document.getElementById('language-toggle');
+
+      function updateLanguage() {
+        const lang = currentLang;
+        for (const id in translations[lang]) {
+          const el = document.getElementById(id);
+          if (el) {
+            el.textContent = translations[lang][id];
+          }
+        }
+        document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        document.documentElement.setAttribute('lang', lang === 'ar' ? 'ar' : 'en');
+        toggleButton.textContent = lang === 'ar' ? 'EN' : 'عربي';
+      }
+
+      toggleButton.addEventListener('click', function () {
+        currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        updateLanguage();
+      });
+
+      // Initialize with the default language
+      updateLanguage();
+
+      // Copy email address to clipboard when clicking the email icon.  This prevents
+      // the default mailto behavior and instead copies the email text and
+      // alerts the user with the address.
+      const emailIconEl = document.getElementById('email-icon');
+      if (emailIconEl) {
+        emailIconEl.addEventListener('click', function (e) {
+          e.preventDefault();
+          const email = 'Hamad-2Q@hotmail.com';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(function () {
+              alert(email);
+            }).catch(function () {
+              // Fallback: still alert the email if copying fails
+              alert(email);
+            });
+          } else {
+            // Fallback for browsers without clipboard support
+            alert(email);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
